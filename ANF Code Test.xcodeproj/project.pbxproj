@@ -14,8 +14,14 @@
 		3E727EDC2672708B006C11AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E727EDB2672708B006C11AC /* Assets.xcassets */; };
 		3E727EDF2672708B006C11AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E727EDD2672708B006C11AC /* LaunchScreen.storyboard */; };
 		3E727EEA2672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */; };
-		3E727F03267281F7006C11AC /* ANFExploreCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E727F02267281F7006C11AC /* ANFExploreCardTableViewController.swift */; };
 		FB05E9C226DC1B990062DF7C /* ExploreDataCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05E9C126DC1B990062DF7C /* ExploreDataCodable.swift */; };
+		FB05E9CF26DC1D9A0062DF7C /* ANFExploreCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05E9C726DC1D9A0062DF7C /* ANFExploreCardViewModel.swift */; };
+		FB05E9D026DC1D9A0062DF7C /* ANFExploreCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05E9C826DC1D9A0062DF7C /* ANFExploreCardTableViewController.swift */; };
+		FB05E9D126DC1D9A0062DF7C /* ExploreContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05E9C926DC1D9A0062DF7C /* ExploreContentTableViewCell.swift */; };
+		FB05E9D226DC1D9A0062DF7C /* DetailDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05E9CB26DC1D9A0062DF7C /* DetailDescriptionTableViewCell.swift */; };
+		FB05E9D326DC1D9A0062DF7C /* DetailImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05E9CC26DC1D9A0062DF7C /* DetailImageTableViewCell.swift */; };
+		FB05E9D426DC1D9A0062DF7C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05E9CD26DC1D9A0062DF7C /* DetailsViewController.swift */; };
+		FB05E9D526DC1D9A0062DF7C /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05E9CE26DC1D9A0062DF7C /* ButtonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +46,14 @@
 		3E727EE52672708B006C11AC /* ANF Code TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ANF Code TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreCardTableViewControllerTests.swift; sourceTree = "<group>"; };
 		3E727EEB2672708B006C11AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E727F02267281F7006C11AC /* ANFExploreCardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreCardTableViewController.swift; sourceTree = "<group>"; };
 		FB05E9C126DC1B990062DF7C /* ExploreDataCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDataCodable.swift; sourceTree = "<group>"; };
+		FB05E9C726DC1D9A0062DF7C /* ANFExploreCardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANFExploreCardViewModel.swift; sourceTree = "<group>"; };
+		FB05E9C826DC1D9A0062DF7C /* ANFExploreCardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANFExploreCardTableViewController.swift; sourceTree = "<group>"; };
+		FB05E9C926DC1D9A0062DF7C /* ExploreContentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreContentTableViewCell.swift; sourceTree = "<group>"; };
+		FB05E9CB26DC1D9A0062DF7C /* DetailDescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		FB05E9CC26DC1D9A0062DF7C /* DetailImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailImageTableViewCell.swift; sourceTree = "<group>"; };
+		FB05E9CD26DC1D9A0062DF7C /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		FB05E9CE26DC1D9A0062DF7C /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +95,7 @@
 		3E727ED126727088006C11AC /* ANF Code Test */ = {
 			isa = PBXGroup;
 			children = (
-				3E727F02267281F7006C11AC /* ANFExploreCardTableViewController.swift */,
+				FB05E9C526DC1D9A0062DF7C /* Features */,
 				FB05E9C026DC1B6E0062DF7C /* Model */,
 				3E727ED226727088006C11AC /* AppDelegate.swift */,
 				3E727ED426727088006C11AC /* SceneDelegate.swift */,
@@ -111,6 +123,36 @@
 				FB05E9C126DC1B990062DF7C /* ExploreDataCodable.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FB05E9C526DC1D9A0062DF7C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				FB05E9C626DC1D9A0062DF7C /* ANFExploreCard */,
+				FB05E9CA26DC1D9A0062DF7C /* ANFCardDetail */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		FB05E9C626DC1D9A0062DF7C /* ANFExploreCard */ = {
+			isa = PBXGroup;
+			children = (
+				FB05E9C726DC1D9A0062DF7C /* ANFExploreCardViewModel.swift */,
+				FB05E9C826DC1D9A0062DF7C /* ANFExploreCardTableViewController.swift */,
+				FB05E9C926DC1D9A0062DF7C /* ExploreContentTableViewCell.swift */,
+			);
+			path = ANFExploreCard;
+			sourceTree = "<group>";
+		};
+		FB05E9CA26DC1D9A0062DF7C /* ANFCardDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FB05E9CB26DC1D9A0062DF7C /* DetailDescriptionTableViewCell.swift */,
+				FB05E9CC26DC1D9A0062DF7C /* DetailImageTableViewCell.swift */,
+				FB05E9CD26DC1D9A0062DF7C /* DetailsViewController.swift */,
+				FB05E9CE26DC1D9A0062DF7C /* ButtonTableViewCell.swift */,
+			);
+			path = ANFCardDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,10 +256,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E727F03267281F7006C11AC /* ANFExploreCardTableViewController.swift in Sources */,
+				FB05E9D526DC1D9A0062DF7C /* ButtonTableViewCell.swift in Sources */,
+				FB05E9D226DC1D9A0062DF7C /* DetailDescriptionTableViewCell.swift in Sources */,
 				3E727ED326727088006C11AC /* AppDelegate.swift in Sources */,
+				FB05E9CF26DC1D9A0062DF7C /* ANFExploreCardViewModel.swift in Sources */,
+				FB05E9D026DC1D9A0062DF7C /* ANFExploreCardTableViewController.swift in Sources */,
 				FB05E9C226DC1B990062DF7C /* ExploreDataCodable.swift in Sources */,
 				3E727ED526727088006C11AC /* SceneDelegate.swift in Sources */,
+				FB05E9D126DC1D9A0062DF7C /* ExploreContentTableViewCell.swift in Sources */,
+				FB05E9D326DC1D9A0062DF7C /* DetailImageTableViewCell.swift in Sources */,
+				FB05E9D426DC1D9A0062DF7C /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
