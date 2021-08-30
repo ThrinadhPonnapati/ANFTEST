@@ -12,6 +12,8 @@ class ButtonTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        button.layer.borderWidth = 2
+        button.layer.borderColor = ColorConstants.buttonBorderColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

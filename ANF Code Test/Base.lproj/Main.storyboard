@@ -73,7 +73,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lbR-X6-RxF">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lbR-X6-RxF">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -158,26 +158,21 @@
                                             <outlet property="topDescriptionLabel" destination="OeA-yS-MnL" id="pcO-NI-KiX"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ButtonTableViewCell" rowHeight="63" id="Vfy-sf-fAk" customClass="ButtonTableViewCell" customModule="ANF_Code_Test" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="474.5" width="414" height="63"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ButtonTableViewCell" rowHeight="79" id="Vfy-sf-fAk" customClass="ButtonTableViewCell" customModule="ANF_Code_Test" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="474.5" width="414" height="79"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vfy-sf-fAk" id="oTd-Th-ZUY">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l08-qf-M1G">
-                                                    <rect key="frame" x="10.5" y="5" width="393" height="53"/>
+                                                    <rect key="frame" x="10.5" y="5" width="393" height="69"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="55" id="WMR-AF-8u5"/>
+                                                    </constraints>
                                                     <state key="normal" title="Button">
                                                         <color key="titleColor" systemColor="secondaryLabelColor"/>
                                                     </state>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                                            <integer key="value" value="1"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                                                            <color key="value" systemColor="secondaryLabelColor"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
                                                 </button>
                                             </subviews>
                                             <constraints>
