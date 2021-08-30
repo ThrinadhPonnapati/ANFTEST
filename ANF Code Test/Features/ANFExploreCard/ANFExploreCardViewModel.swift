@@ -12,9 +12,9 @@ class ANFExploreCardViewModel{
     
     init(view:ANFExploreCardTableViewController ){
         self.view = view
-        data = []
+        self.data = []
     }
-    
+
     func callExploreDataAPI(){
         APIWrapper.shared.callAPI(urlString: URLConstants.exploreDataURL) {[self] exploreData, response, error in
             if let hasError = error{
@@ -27,6 +27,10 @@ class ANFExploreCardViewModel{
                 }
             }
         }
+    }
+    
+    func getDataFromLocalJSON(){
+        self.data = exploreDataCodable ?? []
     }
     
     private var exploreDataCodable: ExploreData?{

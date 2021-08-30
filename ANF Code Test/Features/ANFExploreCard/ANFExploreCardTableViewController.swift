@@ -20,11 +20,13 @@ class ANFExploreCardTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "exploreContentCell", for: indexPath) as! ExploreContentTableViewCell
-        if let vm = viewModel?.data[indexPath.row]{
-            cell.nameLabel1.text = vm.title
-            ImageDownloader.shared.downloadImage(with: vm.backgroundImage, completionHandler: { image, isLoaded in
-                cell.imageView1.image = image
-            }, placeholderImage: UIImage.init(named: "placeholder"))
+        if viewModel?.data.count ?? 0 > 0{
+            if let vm = viewModel?.data[indexPath.row]{
+                cell.nameLabel1.text = vm.title
+                ImageDownloader.shared.downloadImage(with: vm.backgroundImage, completionHandler: { image, isLoaded in
+                    cell.imageView1.image = image
+                }, placeholderImage: UIImage.init(named: "placeholder"))
+            }
         }
         return cell
     }
