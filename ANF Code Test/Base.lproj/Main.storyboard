@@ -139,6 +139,9 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="132" id="6Aa-lH-UXL"/>
+                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
