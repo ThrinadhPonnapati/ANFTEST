@@ -22,6 +22,10 @@
 		FB05E9D326DC1D9A0062DF7C /* DetailImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05E9CC26DC1D9A0062DF7C /* DetailImageTableViewCell.swift */; };
 		FB05E9D426DC1D9A0062DF7C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05E9CD26DC1D9A0062DF7C /* DetailsViewController.swift */; };
 		FB05E9D526DC1D9A0062DF7C /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05E9CE26DC1D9A0062DF7C /* ButtonTableViewCell.swift */; };
+		FB3C723826DC1FD000DD440E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C723626DC1FD000DD440E /* Constants.swift */; };
+		FB3C723926DC1FD000DD440E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C723726DC1FD000DD440E /* Extensions.swift */; };
+		FB3C723C26DC200B00DD440E /* APIWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C723B26DC200B00DD440E /* APIWrapper.swift */; };
+		FB3C723F26DC202800DD440E /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C723E26DC202800DD440E /* ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,10 @@
 		FB05E9CC26DC1D9A0062DF7C /* DetailImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailImageTableViewCell.swift; sourceTree = "<group>"; };
 		FB05E9CD26DC1D9A0062DF7C /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		FB05E9CE26DC1D9A0062DF7C /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		FB3C723626DC1FD000DD440E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FB3C723726DC1FD000DD440E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FB3C723B26DC200B00DD440E /* APIWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIWrapper.swift; sourceTree = "<group>"; };
+		FB3C723E26DC202800DD440E /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,9 @@
 		3E727ED126727088006C11AC /* ANF Code Test */ = {
 			isa = PBXGroup;
 			children = (
+				FB3C723D26DC202800DD440E /* ImageDownloader */,
+				FB3C723A26DC200B00DD440E /* APIWrapper */,
+				FB3C723526DC1FD000DD440E /* Common */,
 				FB05E9C526DC1D9A0062DF7C /* Features */,
 				FB05E9C026DC1B6E0062DF7C /* Model */,
 				3E727ED226727088006C11AC /* AppDelegate.swift */,
@@ -153,6 +164,31 @@
 				FB05E9CE26DC1D9A0062DF7C /* ButtonTableViewCell.swift */,
 			);
 			path = ANFCardDetail;
+			sourceTree = "<group>";
+		};
+		FB3C723526DC1FD000DD440E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FB3C723626DC1FD000DD440E /* Constants.swift */,
+				FB3C723726DC1FD000DD440E /* Extensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FB3C723A26DC200B00DD440E /* APIWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				FB3C723B26DC200B00DD440E /* APIWrapper.swift */,
+			);
+			path = APIWrapper;
+			sourceTree = "<group>";
+		};
+		FB3C723D26DC202800DD440E /* ImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				FB3C723E26DC202800DD440E /* ImageDownloader.swift */,
+			);
+			path = ImageDownloader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,11 +293,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB05E9D526DC1D9A0062DF7C /* ButtonTableViewCell.swift in Sources */,
+				FB3C723826DC1FD000DD440E /* Constants.swift in Sources */,
+				FB3C723F26DC202800DD440E /* ImageDownloader.swift in Sources */,
 				FB05E9D226DC1D9A0062DF7C /* DetailDescriptionTableViewCell.swift in Sources */,
+				FB3C723C26DC200B00DD440E /* APIWrapper.swift in Sources */,
 				3E727ED326727088006C11AC /* AppDelegate.swift in Sources */,
 				FB05E9CF26DC1D9A0062DF7C /* ANFExploreCardViewModel.swift in Sources */,
 				FB05E9D026DC1D9A0062DF7C /* ANFExploreCardTableViewController.swift in Sources */,
 				FB05E9C226DC1B990062DF7C /* ExploreDataCodable.swift in Sources */,
+				FB3C723926DC1FD000DD440E /* Extensions.swift in Sources */,
 				3E727ED526727088006C11AC /* SceneDelegate.swift in Sources */,
 				FB05E9D126DC1D9A0062DF7C /* ExploreContentTableViewCell.swift in Sources */,
 				FB05E9D326DC1D9A0062DF7C /* DetailImageTableViewCell.swift in Sources */,
