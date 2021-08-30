@@ -2,7 +2,7 @@
 //  ExploreContentTableViewCell.swift
 //  ANF Code Test
 //
-//  Created by  on 8/29/21.
+//  Created by Thrinadh Ponnapti on 8/29/21.
 //
 
 import UIKit
