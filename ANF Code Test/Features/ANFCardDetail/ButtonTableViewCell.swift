@@ -15,10 +15,4 @@ class ButtonTableViewCell: UITableViewCell {
         button.layer.borderWidth = 2
         button.layer.borderColor = ColorConstants.buttonBorderColor
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
 }
