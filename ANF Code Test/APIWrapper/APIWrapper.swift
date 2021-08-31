@@ -7,7 +7,11 @@
 
 import Foundation
 
-class APIWrapper{
+protocol  APICalling {
+    func callAPI(urlString : String, completionHandler: @escaping (ExploreData?, URLResponse?, Error?) -> Void)
+}
+
+class APIWrapper : APICalling{
     private init(){
         
     }
