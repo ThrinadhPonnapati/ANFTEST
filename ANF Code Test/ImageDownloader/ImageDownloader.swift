@@ -8,7 +8,16 @@
 import Foundation
 import UIKit
 
-final class ImageDownloader {
+protocol Cachebable{
+    func getCachedImageFrom(urlString: String) -> UIImage?
+}
+
+protocol Downloadable{
+    func getDataTaskFrom(urlString: String) -> URLSessionTask?
+    func downloadImage(with imageUrlString: String?,completionHandler: @escaping (UIImage?, Bool) -> Void,placeholderImage: UIImage?)
+}
+
+final class ImageDownloader : Cachebable, Downloadable{
     // A serial queue to be able to write the non-thread-safe dictionary
     let serialQueueForImages = DispatchQueue(label: "images.queue", attributes: .concurrent)
     let serialQueueForDataTasks = DispatchQueue(label: "dataTasks.queue", attributes: .concurrent)
@@ -24,14 +33,14 @@ final class ImageDownloader {
         imagesDownloadTasks = [:]
     }
     
-    private func getCachedImageFrom(urlString: String) -> UIImage? {
+    internal func getCachedImageFrom(urlString: String) -> UIImage? {
         // Reading from the dictionary should happen in the thread-safe manner.
         serialQueueForImages.sync {
             return cachedImages[urlString]
         }
     }
     
-    private func getDataTaskFrom(urlString: String) -> URLSessionTask? {
+     func getDataTaskFrom(urlString: String) -> URLSessionTask? {
         
         // Reading from the dictionary should happen in the thread-safe manner.
         serialQueueForDataTasks.sync {
